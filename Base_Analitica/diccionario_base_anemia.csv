@@ -1,0 +1,61 @@
+﻿variable,descripcion,origen,tipo,faltantes,pct_faltantes
+id_nino,Identificador unico del nino (hogar + numero de orden),Derivada,str,0,0.0
+hhid,Identificador del hogar - llave de union entre archivos ENDES,RECH6 (modulo 1638),int64,0,0.0
+orden_nino,Numero de orden del nino dentro del hogar,RECH6 (modulo 1638),int64,0,0.0
+anio,Anio de la encuesta,RECH6 (modulo 1638),int64,0,0.0
+anemia,"VARIABLE OBJETIVO. 1 = con anemia, 0 = sin anemia (RM 363-2022-MINSA)",RECH6 (modulo 1638),int8,0,0.0
+anemia_oms,Variable objetivo alternativa segun la directriz OMS 2024 / RM 251-2024-MINSA,RECH6 (modulo 1638),float64,0,0.0
+nivel_anemia,"Severidad: Grave, Moderada, Leve, Sin anemia (RM 363-2022-MINSA)",RECH6 (modulo 1638),str,0,0.0
+nivel_anemia_oms,Severidad segun la directriz OMS 2024,RECH6 (modulo 1638),str,0,0.0
+hb_ajustada,Hemoglobina ajustada por altitud en g/dL (RM 363-2022-MINSA),RECH6 (modulo 1638),float64,0,0.0
+hb_ajustada_oms,Hemoglobina ajustada por altitud en g/dL (directriz OMS 2024),RECH6 (modulo 1638),float64,0,0.0
+hb_cruda,Hemoglobina medida sin ajustar por altitud en g/dL,RECH6 (modulo 1638),float64,0,0.0
+edad_meses,Edad del nino en meses (universo: 6 a 59),RECH6 (modulo 1638),int64,0,0.0
+grupo_edad,Edad agrupada en cinco tramos,Derivada,category,0,0.0
+sexo,Sexo del nino,RECH6 (modulo 1638),str,0,0.0
+peso_kg,Peso en kilogramos,RECH6 (modulo 1638),float64,13,0.1
+talla_cm,Talla en centimetros,RECH6 (modulo 1638),float64,16,0.1
+z_talla_edad,Puntaje Z talla para la edad (patron OMS),RECH6 (modulo 1638),float64,66,0.4
+z_peso_edad,Puntaje Z peso para la edad (patron OMS),RECH6 (modulo 1638),float64,66,0.4
+z_peso_talla,Puntaje Z peso para la talla (patron OMS),RECH6 (modulo 1638),float64,66,0.4
+desnutricion_cronica,1 si el puntaje Z talla/edad es menor a -2,Derivada,float64,66,0.4
+orden_nacimiento,Orden de nacimiento del nino,RECH6 (modulo 1638),float64,916,5.2
+intervalo_nacimiento_meses,Meses transcurridos desde el nacimiento anterior,RECH6 (modulo 1638),float64,6246,35.5
+educacion_madre,Nivel educativo mas alto alcanzado por la madre,RECH6 (modulo 1638),str,469,2.7
+educacion_madre_num,Nivel educativo de la madre en codigo ordinal (0 a 3),RECH6 (modulo 1638),float64,469,2.7
+edad_madre,Edad de la madre en anios,RECH5 (modulo 1638),float64,916,5.2
+imc_madre,Indice de masa corporal de la madre,RECH5 (modulo 1638),float64,933,5.3
+anemia_madre,1 si la madre tiene anemia (RM 363-2022-MINSA),RECH5 (modulo 1638),float64,932,5.3
+nivel_anemia_madre,Severidad de la anemia materna,RECH5 (modulo 1638),str,932,5.3
+hb_madre,Hemoglobina ajustada por altitud de la madre en g/dL,RECH5 (modulo 1638),float64,932,5.3
+ubigeo,"Codigo de ubicacion geografica de 6 digitos, como texto",RECH0 (modulo 1629),str,0,0.0
+departamento,Departamento de residencia,RECH0 (modulo 1629),str,0,0.0
+departamento_cod,Codigo del departamento (1 a 25),RECH0 (modulo 1629),int64,0,0.0
+region_natural,"Lima Metropolitana, Resto Costa, Sierra o Selva",RECH23 (modulo 1630),str,0,0.0
+area,Area de residencia urbana o rural,RECH0 (modulo 1629),str,0,0.0
+altitud_m,Altitud del conglomerado en metros sobre el nivel del mar,RECH0 (modulo 1629),int64,0,0.0
+altitud_cat,Altitud agrupada en cuatro categorias,Derivada,category,0,0.0
+latitud,Latitud del conglomerado,RECH0 (modulo 1629),float64,0,0.0
+longitud,Longitud del conglomerado,RECH0 (modulo 1629),float64,0,0.0
+quintil_riqueza,Quintil del indice de riqueza del hogar (1 mas pobre a 5 mas rico),RECH23 (modulo 1630),float64,0,0.0
+quintil_riqueza_lbl,Quintil de riqueza con etiqueta,RECH23 (modulo 1630),str,0,0.0
+indice_riqueza,Puntaje continuo del indice de riqueza,RECH23 (modulo 1630),float64,0,0.0
+fuente_agua,Fuente principal de agua para beber,RECH23 (modulo 1630),str,0,0.0
+agua_red_publica,1 si el agua proviene de red publica o grifo publico,RECH23 (modulo 1630),float64,0,0.0
+agua_dentro_vivienda,1 si el agua llega por red dentro de la vivienda,RECH23 (modulo 1630),float64,0,0.0
+tiempo_agua_min,"Minutos para ir, recoger agua y volver (0 si esta en la vivienda)",RECH23 (modulo 1630),float64,1,0.0
+servicio_higienico,Tipo de servicio higienico del hogar,RECH23 (modulo 1630),str,0,0.0
+desague_red,1 si el hogar esta conectado a red publica de desague,RECH23 (modulo 1630),float64,0,0.0
+sin_servicio_higienico,1 si el hogar no tiene servicio higienico,RECH23 (modulo 1630),float64,0,0.0
+electricidad,1 si el hogar tiene electricidad,RECH23 (modulo 1630),float64,0,0.0
+piso,Material predominante del piso de la vivienda,RECH23 (modulo 1630),str,255,1.4
+piso_tierra,1 si el piso es de tierra o arena,RECH23 (modulo 1630),float64,255,1.4
+combustible_cocina,Combustible usado con mas frecuencia para cocinar,RECH23 (modulo 1630),str,0,0.0
+combustible_contaminante,"1 si cocina con lena, carbon, kerosene, bosta o residuos",RECH23 (modulo 1630),float64,0,0.0
+tam_hogar,Total de personas en el hogar,RECH0 (modulo 1629),int64,0,0.0
+n_menores5,Numero de ninos menores de 5 anios en el hogar,RECH0 (modulo 1629),int64,0,0.0
+sexo_jefe_hogar,Sexo del jefe del hogar,RECH23 (modulo 1630),str,0,0.0
+edad_jefe_hogar,Edad del jefe del hogar,RECH23 (modulo 1630),float64,1,0.0
+factor,Factor de expansion (HV005 / 1000000). Usar para estimar prevalencias,RECH0 (modulo 1629),float64,0,0.0
+conglomerado,Unidad primaria de muestreo. Usar para validacion agrupada,RECH0 (modulo 1629),int64,0,0.0
+estrato,Estrato muestral,RECH0 (modulo 1629),int64,0,0.0

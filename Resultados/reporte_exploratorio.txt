@@ -1,0 +1,98 @@
+==========================================================================
+ANALISIS EXPLORATORIO - ANEMIA INFANTIL 6 A 59 MESES - ENDES 2025
+==========================================================================
+
+Niños en la base: 17,616
+Prevalencia nacional (RM 363-2022-MINSA): 33.6 %  (IC95 32.7 - 34.4)
+Prevalencia nacional (directriz OMS 2024): 29.6 %
+Prevalencia 6-35 meses (indicador mas difundido): 43.7 %
+
+--- SEVERIDAD ---
+   Grave          0.1 %
+   Moderada       9.3 %
+   Leve          24.1 %
+   Sin anemia    66.4 %
+
+--- POR DEPARTAMENTO (ordenado) ---
+   Puno              64.0 %   (n=437)
+   Loreto            47.8 %   (n=818)
+   Cusco             46.1 %   (n=501)
+   Apurimac          44.1 %   (n=597)
+   Madre de Dios     41.6 %   (n=693)
+   Huancavelica      41.4 %   (n=525)
+   Ucayali           41.1 %   (n=859)
+   Ayacucho          40.1 %   (n=707)
+   Junin             40.1 %   (n=644)
+   Pasco             38.9 %   (n=536)
+   Ancash            37.5 %   (n=504)
+   Huanuco           35.7 %   (n=738)
+   Amazonas          32.6 %   (n=793)
+   San Martin        31.9 %   (n=851)
+   Tumbes            31.2 %   (n=767)
+   La Libertad       31.1 %   (n=682)
+   Piura             31.0 %   (n=771)
+   Arequipa          29.0 %   (n=539)
+   Cajamarca         27.9 %   (n=518)
+   Lambayeque        27.8 %   (n=729)
+   Callao            27.6 %   (n=597)
+   Ica               26.5 %   (n=740)
+   Moquegua          26.3 %   (n=550)
+   Lima              26.1 %   (n=2,080)
+   Tacna             21.7 %   (n=440)
+
+--- POR ALTITUD ---
+   Costa baja (<1000 m)          30.2 %   (n=11,005)
+   Intermedia (1000-2499 m)      27.8 %   (n=1,969)
+   Alta (2500-3499 m)            38.8 %   (n=3,136)
+   Muy alta (3500+ m)            58.5 %   (n=1,506)
+
+--- POR QUINTIL DE RIQUEZA ---
+   Mas pobre     43.3 %   (n=5,287)
+   Pobre         34.4 %   (n=4,856)
+   Medio         30.3 %   (n=3,562)
+   Rico          26.0 %   (n=2,354)
+   Mas rico      21.1 %   (n=1,557)
+
+--- POR EDAD ---
+   6-11 m      66.1 %   (n=1,955)
+   12-23 m     46.2 %   (n=3,752)
+   24-35 m     29.4 %   (n=3,804)
+   36-47 m     25.4 %   (n=4,199)
+   48-59 m     17.7 %   (n=3,906)
+
+--- OTROS CORTES ---
+
+   area:
+     Rural                   40.9 %   (n=5,201)
+     Urbano                  30.4 %   (n=12,415)
+
+   region_natural:
+     Sierra                  42.5 %   (n=5,349)
+     Selva                   37.5 %   (n=5,009)
+     Resto Costa             27.7 %   (n=5,269)
+     Lima Metropolitana      25.8 %   (n=1,989)
+
+   educacion_madre:
+     Primaria                40.7 %   (n=2,482)
+     Sin educacion           40.4 %   (n=152)
+     Secundaria              34.2 %   (n=11,881)
+     Superior                24.8 %   (n=2,632)
+
+   sexo:
+     Hombre                  34.8 %   (n=9,076)
+     Mujer                   32.3 %   (n=8,540)
+
+--- ANEMIA MATERNA vs ANEMIA INFANTIL ---
+   Madre sin anemia      30.9 %   (n=12,782)
+   Madre con anemia      42.9 %   (n=3,902)
+   Razon de prevalencias: 1.39
+
+--- SANEAMIENTO ---
+   Agua de red publica                    si:  33.1 %   no:  34.8 %   brecha:  +1.7 pp
+   Desague de red publica                 si:  29.6 %   no:  40.8 %   brecha: +11.2 pp
+   Piso de tierra                         si:  42.9 %   no:  31.1 %   brecha: -11.8 pp
+   Cocina con combustible contaminante    si:  43.8 %   no:  30.6 %   brecha: -13.1 pp
+   Tiene electricidad                     si:  32.5 %   no:  51.7 %   brecha: +19.2 pp
+
+--- BRECHA EXTREMA ---
+   Puno (64.0 %) vs Tacna (21.7 %) = 42.3 puntos porcentuales

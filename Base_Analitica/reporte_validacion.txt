@@ -1,0 +1,69 @@
+========================================================================
+BASE ANALITICA - ANEMIA INFANTIL - ENDES 2025
+========================================================================
+
+1. ARCHIVOS LEIDOS (originales, sin modificar)
+   RECH6 ninos         19,298 filas x  43 columnas
+   RECH5 madres        37,679 filas x  40 columnas
+   RECH0 hogar         37,331 filas x  44 columnas
+   RECH23 vivienda     37,331 filas x 130 columnas
+
+2. UNIONES (verificadas fila a fila)
+   + RECH0  : 19,298 -> 19,298 filas | sin pareja: 0
+   + RECH23 : 19,298 -> 19,298 filas | sin pareja: 0
+   + RECH5  : 19,298 -> 19,298 filas | madre no enlazada: 1,008
+
+3. FILTRO AL UNIVERSO DEL INDICADOR
+   Ninos 0-59 meses en RECH6            : 19,298
+   Ninos 6-59 meses                     : 17,990
+   Excluidos por no tener hemoglobina   : 374
+   BASE FINAL (universo de modelado)    : 17,616
+
+4. VALIDACION - PREVALENCIA DE ANEMIA (ponderada por factor de expansion)
+   6-59 meses  RM 363-2022-MINSA   :  33.6 %   (sin ponderar  34.4 %)
+   6-59 meses  Directriz OMS 2024  :  29.6 %
+   6-35 meses  RM 363-2022-MINSA   :  43.7 %   <- comparar con el dato publicado por el INEI
+   6-35 meses  Directriz OMS 2024  :  35.1 %
+
+   Prevalencia por area:
+     Rural     40.9 %   (n = 5,201)
+     Urbano    30.4 %   (n = 12,415)
+
+   Prevalencia por categoria de altitud:
+     Costa baja (<1000 m)        30.2 %   (n = 11,005)
+     Intermedia (1000-2499 m)    27.8 %   (n = 1,969)
+     Alta (2500-3499 m)          38.8 %   (n = 3,136)
+     Muy alta (3500+ m)          58.5 %   (n = 1,506)
+
+   Top 5 departamentos con mayor prevalencia:
+     Puno              64.0 %   (n = 437)
+     Loreto            47.8 %   (n = 818)
+     Cusco             46.1 %   (n = 501)
+     Apurimac          44.1 %   (n = 597)
+     Madre de Dios     41.6 %   (n = 693)
+
+5. COMPLETITUD DE LA BASE FINAL
+   intervalo_nacimiento_meses    6,246  (35.5 %)
+   imc_madre                       933  ( 5.3 %)
+   anemia_madre                    932  ( 5.3 %)
+   hb_madre                        932  ( 5.3 %)
+   nivel_anemia_madre              932  ( 5.3 %)
+   edad_madre                      916  ( 5.2 %)
+   orden_nacimiento                916  ( 5.2 %)
+   educacion_madre_num             469  ( 2.7 %)
+   educacion_madre                 469  ( 2.7 %)
+   piso_tierra                     255  ( 1.4 %)
+   piso                            255  ( 1.4 %)
+   z_peso_talla                     66  ( 0.4 %)
+   z_peso_edad                      66  ( 0.4 %)
+   z_talla_edad                     66  ( 0.4 %)
+   desnutricion_cronica             66  ( 0.4 %)
+   talla_cm                         16  ( 0.1 %)
+   peso_kg                          13  ( 0.1 %)
+   tiempo_agua_min                   1  ( 0.0 %)
+   edad_jefe_hogar                   1  ( 0.0 %)
+
+6. ARCHIVOS GENERADOS
+   base_anemia_endes2025.csv        17,616 filas x 60 columnas
+   base_anemia_endes2025.db         tabla SQL 'anemia'
+   diccionario_base_anemia.csv      60 variables documentadas

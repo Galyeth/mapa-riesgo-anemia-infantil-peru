@@ -1,0 +1,64 @@
+==========================================================================
+MODELO PREDICTIVO DE RIESGO DE ANEMIA INFANTIL
+==========================================================================
+
+Observaciones            : 17,616 ninos de 6 a 59 meses
+Prevalencia en la muestra: 34.4 % (sin ponderar)
+Grupos de validacion     : 25 departamentos
+Predictores sin geografia: 34
+Predictores con geografia: 39
+
+Variables excluidas por fuga de informacion: anemia, anemia_oms, nivel_anemia, nivel_anemia_oms, hb_ajustada, hb_ajustada_oms, hb_cruda
+
+M0 Logistica (completo)
+   AUC-ROC  0.750  (por fold: 0.761, 0.745, 0.732, 0.751, 0.763  sd 0.011)
+   AUC-PR   0.613   (prevalencia de referencia 0.344)
+   Brier    0.1854
+
+M1 LightGBM sin geografia
+   AUC-ROC  0.737  (por fold: 0.743, 0.728, 0.725, 0.753, 0.753  sd 0.012)
+   AUC-PR   0.599   (prevalencia de referencia 0.344)
+   Brier    0.1892
+
+M2 LightGBM completo
+   AUC-ROC  0.755  (por fold: 0.768, 0.745, 0.734, 0.762, 0.766  sd 0.013)
+   AUC-PR   0.620   (prevalencia de referencia 0.344)
+   Brier    0.1837
+
+--- UTILIDAD OPERATIVA (modelo M2 LightGBM completo) ---
+   Si el equipo de salud solo puede visitar una fraccion de los ninos,
+   cuantos casos de anemia alcanza si prioriza por riesgo predicho:
+   Top  10 %  ->  detecta 21.9 % de los casos  | 75.2 % de los visitados tiene anemia  | lift 2.19x
+   Top  20 %  ->  detecta 38.7 % de los casos  | 66.6 % de los visitados tiene anemia  | lift 1.94x
+   Top  30 %  ->  detecta 53.6 % de los casos  | 61.5 % de los visitados tiene anemia  | lift 1.79x
+   Top  40 %  ->  detecta 65.0 % de los casos  | 55.9 % de los visitados tiene anemia  | lift 1.63x
+   Top  50 %  ->  detecta 74.5 % de los casos  | 51.3 % de los visitados tiene anemia  | lift 1.49x
+
+--- CALIBRACION (deciles de riesgo) ---
+   predicho 0.096   observado 0.081
+   predicho 0.138   observado 0.132
+   predicho 0.174   observado 0.191
+   predicho 0.215   observado 0.214
+   predicho 0.262   observado 0.258
+   predicho 0.321   observado 0.326
+   predicho 0.397   observado 0.391
+   predicho 0.489   observado 0.512
+   predicho 0.597   observado 0.580
+   predicho 0.737   observado 0.753
+
+--- QUE PESA MAS EN LA PREDICCION (SHAP, top 15) ---
+   talla_cm                     17.40 %
+   hb_madre                      9.58 %
+   edad_meses                    8.25 %
+   altitud_m                     7.55 %
+   indice_riqueza                4.72 %
+   longitud                      4.69 %
+   sexo                          4.35 %
+   peso_kg                       4.02 %
+   intervalo_nacimiento_meses    3.52 %
+   latitud                       3.10 %
+   edad_madre                    2.99 %
+   z_peso_talla                  2.60 %
+   anemia_madre                  2.42 %
+   z_talla_edad                  2.32 %
+   imc_madre                     2.19 %

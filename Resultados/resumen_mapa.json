@@ -1,0 +1,78 @@
+{
+  "mediana_prevalencia_dep": 32.6,
+  "departamentos_criticos": [
+    "Puno",
+    "Loreto",
+    "Cusco",
+    "Ucayali",
+    "Junin",
+    "Ancash",
+    "Huanuco"
+  ],
+  "pct_casos_criticos": 35.8,
+  "top5": [
+    {
+      "departamento": "Puno",
+      "prevalencia_obs": 64.0,
+      "pct_casos_pais": 6.5
+    },
+    {
+      "departamento": "Loreto",
+      "prevalencia_obs": 47.8,
+      "pct_casos_pais": 8.2
+    },
+    {
+      "departamento": "Cusco",
+      "prevalencia_obs": 46.1,
+      "pct_casos_pais": 4.8
+    },
+    {
+      "departamento": "Apurimac",
+      "prevalencia_obs": 44.1,
+      "pct_casos_pais": 2.2
+    },
+    {
+      "departamento": "Madre de Dios",
+      "prevalencia_obs": 41.6,
+      "pct_casos_pais": 0.8
+    }
+  ],
+  "concentracion_top5_casos": 46.7,
+  "gradiente_altitud": [
+    {
+      "altitud_tramo": "0-499",
+      "prevalencia_obs": 30.8,
+      "n_muestra": 9640.0
+    },
+    {
+      "altitud_tramo": "500-999",
+      "prevalencia_obs": 25.2,
+      "n_muestra": 1365.0
+    },
+    {
+      "altitud_tramo": "1000-1999",
+      "prevalencia_obs": 28.5,
+      "n_muestra": 1288.0
+    },
+    {
+      "altitud_tramo": "2000-2999",
+      "prevalencia_obs": 31.0,
+      "n_muestra": 2000.0
+    },
+    {
+      "altitud_tramo": "3000-3499",
+      "prevalencia_obs": 42.8,
+      "n_muestra": 1817.0
+    },
+    {
+      "altitud_tramo": "3500-3999",
+      "prevalencia_obs": 58.3,
+      "n_muestra": 1220.0
+    },
+    {
+      "altitud_tramo": "4000+",
+      "prevalencia_obs": 60.3,
+      "n_muestra": 286.0
+    }
+  ]
+}

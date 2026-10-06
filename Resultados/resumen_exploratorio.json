@@ -1,0 +1,18 @@
+{
+  "n_ninos": 17616,
+  "prev_nacional": 33.6,
+  "prev_nacional_ic": [
+    32.7,
+    34.4
+  ],
+  "prev_oms2024": 29.6,
+  "prev_6a35": 43.7,
+  "prev_6a35_oms": 35.1,
+  "severidad": {
+    "Grave": 0.1,
+    "Leve": 24.1,
+    "Moderada": 9.3,
+    "Sin anemia": 66.4
+  },
+  "razon_anemia_materna": 1.39
+}

@@ -1,0 +1,5 @@
+﻿altitud_cat,n,prevalencia_anemia,ic95_inf,ic95_sup,prevalencia_oms2024
+Costa baja (<1000 m),11005,30.2,29.1,31.2,25.8
+Intermedia (1000-2499 m),1969,27.8,25.3,30.2,40.8
+Alta (2500-3499 m),3136,38.8,36.8,40.7,35.4
+Muy alta (3500+ m),1506,58.5,55.6,61.5,36.1
